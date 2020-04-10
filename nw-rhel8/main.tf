@@ -103,7 +103,7 @@ resource "aws_instance" "syu-nw8-hana1" {
   subnet_id = var.syu-public-subnet
   instance_type = "r4.4xlarge"
   root_block_device {
-    volume_size = "120"
+    volume_size = "500"
   }
   connection {
     user = "syu@redhat.com"

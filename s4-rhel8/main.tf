@@ -149,7 +149,7 @@ resource "aws_instance" "syu-rhel8-hana1" {
   subnet_id = var.syu-az-1a-subnetid
   instance_type = "r4.2xlarge"
   root_block_device {
-    volume_size = "120"
+    volume_size = "500"
   }
   connection {
     user = "syu@redhat.com"
@@ -173,7 +173,7 @@ resource "aws_instance" "syu-rhel8-hana2" {
   subnet_id = var.syu-az-1c-subnetid
   instance_type = "r4.2xlarge"
   root_block_device {
-    volume_size = "120"
+    volume_size = "500"
   }
   connection {
     user = "syu@redhat.com"
@@ -197,7 +197,7 @@ resource "aws_instance" "syu-rhel8-hana3" {
   subnet_id = var.syu-az-1c-subnetid
   instance_type = "r4.2xlarge"
   root_block_device {
-    volume_size = "120"
+    volume_size = "500"
   }
   connection {
     user = "syu@redhat.com"
